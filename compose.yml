@@ -1,0 +1,11 @@
+services:
+  db:
+    image: mariadb:latest
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MARIADB_RANDOM_ROOT_PASSWORD: yes
+      MARIADB_DATABASE: example
+      MARIADB_USER: example_user
+      MARIADB_PASSWORD: example_password
