@@ -29,6 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["express", "npm:4.18.2"],\
+            ["mariadb", "npm:3.1.2"],\
             ["sequelize", "virtual:1265e1c1aa30a866ee767ed8aefdc3744e034a691f38df7b1608f49afae52e3dc54547689e73ac678f473fb3e8a6bd0935f55e76977e47569c3476c2254e10f6#npm:6.31.1"]\
           ],\
           "linkType": "SOFT"\
@@ -44,6 +45,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/geojson", [\
+        ["npm:7946.0.10", {\
+          "packageLocation": "./.yarn/cache/@types-geojson-npm-7946.0.10-deca8d1263-12c407c2dc.zip/node_modules/@types/geojson/",\
+          "packageDependencies": [\
+            ["@types/geojson", "npm:7946.0.10"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/ms", [\
         ["npm:0.7.31", {\
           "packageLocation": "./.yarn/cache/@types-ms-npm-0.7.31-ea3b89342b-daadd354ae.zip/node_modules/@types/ms/",\
@@ -54,6 +64,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
+        ["npm:17.0.45", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-17.0.45-fdb38d1624-aa04366b91.zip/node_modules/@types/node/",\
+          "packageDependencies": [\
+            ["@types/node", "npm:17.0.45"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:20.1.2", {\
           "packageLocation": "./.yarn/cache/@types-node-npm-20.1.2-b07f83bd3a-9bb2cf0a84.zip/node_modules/@types/node/",\
           "packageDependencies": [\
@@ -213,6 +230,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["denque", [\
+        ["npm:2.1.0", {\
+          "packageLocation": "./.yarn/cache/denque-npm-2.1.0-578d0b6297-1d4ae1d05e.zip/node_modules/denque/",\
+          "packageDependencies": [\
+            ["denque", "npm:2.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["depd", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/depd-npm-2.0.0-b6c51a4b43-abbe19c768.zip/node_modules/depd/",\
@@ -322,6 +348,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["express-sequelize-example", "workspace:."],\
             ["express", "npm:4.18.2"],\
+            ["mariadb", "npm:3.1.2"],\
             ["sequelize", "virtual:1265e1c1aa30a866ee767ed8aefdc3744e034a691f38df7b1608f49afae52e3dc54547689e73ac678f473fb3e8a6bd0935f55e76977e47569c3476c2254e10f6#npm:6.31.1"]\
           ],\
           "linkType": "SOFT"\
@@ -423,6 +450,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["safer-buffer", "npm:2.1.2"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:0.6.3", {\
+          "packageLocation": "./.yarn/cache/iconv-lite-npm-0.6.3-24b8aae27e-3f60d47a5c.zip/node_modules/iconv-lite/",\
+          "packageDependencies": [\
+            ["iconv-lite", "npm:0.6.3"],\
+            ["safer-buffer", "npm:2.1.2"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["inflection", [\
@@ -467,6 +502,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["lru-cache", "npm:6.0.0"],\
             ["yallist", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:7.18.3", {\
+          "packageLocation": "./.yarn/cache/lru-cache-npm-7.18.3-e68be5b11c-e550d77238.zip/node_modules/lru-cache/",\
+          "packageDependencies": [\
+            ["lru-cache", "npm:7.18.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["mariadb", [\
+        ["npm:3.1.2", {\
+          "packageLocation": "./.yarn/cache/mariadb-npm-3.1.2-ac08a4acc2-70079e09ec.zip/node_modules/mariadb/",\
+          "packageDependencies": [\
+            ["mariadb", "npm:3.1.2"],\
+            ["@types/geojson", "npm:7946.0.10"],\
+            ["@types/node", "npm:17.0.45"],\
+            ["denque", "npm:2.1.0"],\
+            ["iconv-lite", "npm:0.6.3"],\
+            ["lru-cache", "npm:7.18.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -753,7 +809,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ibm_db", null],\
             ["inflection", "npm:1.13.4"],\
             ["lodash", "npm:4.17.21"],\
-            ["mariadb", null],\
+            ["mariadb", "npm:3.1.2"],\
             ["moment", "npm:2.29.4"],\
             ["moment-timezone", "npm:0.5.43"],\
             ["mysql2", null],\

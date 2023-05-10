@@ -14,6 +14,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/geojson@npm:^7946.0.10":
+  version: 7946.0.10
+  resolution: "@types/geojson@npm:7946.0.10"
+  checksum: 12c407c2dc93ecb26c08af533ee732f1506a9b29456616ba7ba1d525df96206c28ddf44a528f6a5415d7d22893e9d967420940a9c095ee5e539c1eba5fefc1f4
+  languageName: node
+  linkType: hard
+
 "@types/ms@npm:*":
   version: 0.7.31
   resolution: "@types/ms@npm:0.7.31"
@@ -25,6 +32,13 @@ __metadata:
   version: 20.1.2
   resolution: "@types/node@npm:20.1.2"
   checksum: 9bb2cf0a846e60cc06c44a5622c1998d8373c8675b24d11c86845a29f32c60f5bca9627f2a2535640f902be3dbcc60f126a895abe8e10f12e1467ae3deaba56d
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^17.0.45":
+  version: 17.0.45
+  resolution: "@types/node@npm:17.0.45"
+  checksum: aa04366b9103b7d6cfd6b2ef64182e0eaa7d4462c3f817618486ea0422984c51fc69fd0d436eae6c9e696ddfdbec9ccaa27a917f7c2e8c75c5d57827fe3d95e8
   languageName: node
   linkType: hard
 
@@ -140,6 +154,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"denque@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "denque@npm:2.1.0"
+  checksum: 1d4ae1d05e59ac3a3481e7b478293f4b4c813819342273f3d5b826c7ffa9753c520919ba264f377e09108d24ec6cf0ec0ac729a5686cbb8f32d797126c5dae74
+  languageName: node
+  linkType: hard
+
 "depd@npm:2.0.0":
   version: 2.0.0
   resolution: "depd@npm:2.0.0"
@@ -194,6 +215,7 @@ __metadata:
   resolution: "express-sequelize-example@workspace:."
   dependencies:
     express: ^4.18.2
+    mariadb: ^3.1.2
     sequelize: ^6.31.1
   languageName: unknown
   linkType: soft
@@ -322,6 +344,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"iconv-lite@npm:^0.6.3":
+  version: 0.6.3
+  resolution: "iconv-lite@npm:0.6.3"
+  dependencies:
+    safer-buffer: ">= 2.1.2 < 3.0.0"
+  checksum: 3f60d47a5c8fc3313317edfd29a00a692cc87a19cac0159e2ce711d0ebc9019064108323b5e493625e25594f11c6236647d8e256fbe7a58f4a3b33b89e6d30bf
+  languageName: node
+  linkType: hard
+
 "inflection@npm:^1.13.2":
   version: 1.13.4
   resolution: "inflection@npm:1.13.4"
@@ -356,6 +387,26 @@ __metadata:
   dependencies:
     yallist: ^4.0.0
   checksum: f97f499f898f23e4585742138a22f22526254fdba6d75d41a1c2526b3b6cc5747ef59c5612ba7375f42aca4f8461950e925ba08c991ead0651b4918b7c978297
+  languageName: node
+  linkType: hard
+
+"lru-cache@npm:^7.14.0":
+  version: 7.18.3
+  resolution: "lru-cache@npm:7.18.3"
+  checksum: e550d772384709deea3f141af34b6d4fa392e2e418c1498c078de0ee63670f1f46f5eee746e8ef7e69e1c895af0d4224e62ee33e66a543a14763b0f2e74c1356
+  languageName: node
+  linkType: hard
+
+"mariadb@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "mariadb@npm:3.1.2"
+  dependencies:
+    "@types/geojson": ^7946.0.10
+    "@types/node": ^17.0.45
+    denque: ^2.1.0
+    iconv-lite: ^0.6.3
+    lru-cache: ^7.14.0
+  checksum: 70079e09ecc2ae4113b317912419053645aabbcc3e584c7c1dba89306cb0af1a47438ccbf03f1c97f8fee07b952c33952edbc100847d55a30aa9d897b04c729f
   languageName: node
   linkType: hard
 
@@ -538,7 +589,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"safer-buffer@npm:>= 2.1.2 < 3":
+"safer-buffer@npm:>= 2.1.2 < 3, safer-buffer@npm:>= 2.1.2 < 3.0.0":
   version: 2.1.2
   resolution: "safer-buffer@npm:2.1.2"
   checksum: cab8f25ae6f1434abee8d80023d7e72b598cf1327164ddab31003c51215526801e40b66c5e65d658a0af1e9d6478cadcb4c745f4bd6751f97d8644786c0978b0
