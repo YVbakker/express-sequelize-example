@@ -2,7 +2,8 @@
   "name": "express-sequelize-example",
   "packageManager": "yarn@3.5.1",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "sequelize": "^6.31.1"
   },
   "scripts": {
     "start": "node ./app.js"
