@@ -1,4 +1,7 @@
 {
   "name": "express-sequelize-example",
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@3.5.1",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
